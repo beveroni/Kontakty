@@ -18,8 +18,9 @@
   box-shadow: 0 0 15px #446d8059;
   padding: 20px;
   margin: 15px;
-  width: 34vh;
   display: flex;
+  align-items: center;
+  /* Zarovnání obsahu vertikálně */
 }
 
 .photo {
@@ -27,16 +28,20 @@
   height: 120px;
   border-radius: 50%;
   border: 2px solid #6995a959;
+  margin-right: 20px;
+  /* Mezera mezi fotografií a zbytkem obsahu */
 }
 
 .info {
-  margin-left: 20px;
   flex: 1;
 }
 
+.info h1,
 .info p {
-  font-size: 22px;
+  margin: 0;
+  /* Odstranění vnějšího odsazení nadpisu a odstavce */
 }
+
 
 .buttons {
   padding: 0 10px;
@@ -46,6 +51,11 @@
   justify-content: center;
   flex-shrink: 0;
   margin-left: auto;
+}
+
+.buttons img {
+  margin-right: 10px;
+  /* Mezera mezi tlačítky */
 }
 
 .call,
